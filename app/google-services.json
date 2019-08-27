@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "325042782002",
+    "firebase_url": "https://dementai-9d6d9.firebaseio.com",
+    "project_id": "dementai-9d6d9",
+    "storage_bucket": "dementai-9d6d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325042782002:android:0e28b97a491d636c",
+        "android_client_info": {
+          "package_name": "com.ella.dementiatest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325042782002-rnb70up6tbuqu5500qa03du5qrg8m1kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsi5fhjdiAFQiajRZLWlgA0p-iZyqlWv4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

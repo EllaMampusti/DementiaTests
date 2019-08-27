@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsFragment"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tracker-textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 of 18"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSandDark"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/question-textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgetting dates to do something, e.g., paying bills, appointments or when something was done,
+e.g., going on an outing, when visitors come."
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingBottom="16dp"/>
+
+
+                <RadioGroup
+                    android:id="@+id/scids-options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+                    <RadioButton
+                        android:id="@+id/scids-no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No, there has been no change"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16sp"
+                        android:paddingBottom="16dp"/>
+
+                    <RadioButton
+                        android:id="@+id/scids-bit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="A bit worse"
+                        android:textSize="16sp"
+                        android:paddingBottom="16dp"/>
+
+                    <RadioButton
+                        android:id="@+id/scids-somewhat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Somewhat worse"
+                        android:textSize="16sp"
+                        android:paddingBottom="16dp"/>
+
+                    <RadioButton
+                        android:id="@+id/scids-worse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Much worse"
+                        android:textSize="16sp"
+                        android:paddingBottom="16dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/next-button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="8dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="8dp"
+            android:text="Respondent Age"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/age-edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter age between 60 - 110"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:paddingBottom="8dp"
+            android:textSize="14sp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="8dp"
+            android:text="Gender"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/gender-rbgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/male-rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Male"
+                android:textColor="@color/colorSandDark"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/female-rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Female"
+                android:textColor="@color/colorSandDark"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/others-rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Others"
+                android:textColor="@color/colorSandDark"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="8dp"
+            android:text="Ethnicity"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/ethnicity-spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="8dp">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="8dp"
+            android:text="Education Level"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/educ-spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="8dp">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/toquestions-button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="8dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+    </LinearLayout>
+
+</LinearLayout>

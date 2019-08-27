@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuestionsFragment"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="90">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/cit-tracker-textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingBottom="14dp"
+                        android:text="1 of 6"
+                        android:textColor="@color/colorSandDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/cit-question-textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingBottom="16dp"
+                        android:text="What year is it?"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/phrase-text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="John, Smith, 42, High Street, Bedford"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <!--Countback-->
+                    <LinearLayout
+                        android:id="@+id/count-back-group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:id="@+id/count-ans-text"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="80"
+                                android:text="Answer"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/montserrat_regular"/>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/count-reset-cardview"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardElevation="1dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_margin="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:gravity="center"
+                                    android:text="RESET"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    />
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/six-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/six-text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorSand"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="6"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="14sp" />
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/nine-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/nine-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="9"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/four-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/four-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="4"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/five-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/five-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="5"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/one-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/one-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="1"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/three-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/three-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="3"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/eight-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/eight-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="8"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/two-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/two-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="2"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/seven-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/seven-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="7"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/ten-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/ten-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="10"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Year-->
+                    <EditText
+                        android:id="@+id/date-edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:visibility="visible"
+                        android:hint="Enter the year, e.g. 1992, 2012"/>
+
+                    <!--Month-->
+                    <LinearLayout
+                        android:id="@+id/spinner-linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <Spinner
+                            android:id="@+id/months-spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/time-linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TimePicker
+                            android:id="@+id/time-picker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorSand"
+                            android:timePickerMode="spinner">
+
+                        </TimePicker>
+
+                    </LinearLayout>
+
+
+                    <!--Phrase-->
+                    <LinearLayout
+                        android:id="@+id/phrase-group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <EditText
+                            android:id="@+id/phrase-word1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:hint="Enter first word"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <EditText
+                            android:id="@+id/phrase-word2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:hint="Enter second word"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <EditText
+                            android:id="@+id/phrase-word3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:hint="Enter third word"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <EditText
+                            android:id="@+id/phrase-word4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:hint="Enter fourth word"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <EditText
+                            android:id="@+id/phrase-word5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:hint="Enter fifth word"
+                            android:fontFamily="@font/montserrat_regular"/>
+                    </LinearLayout>
+
+
+                    <!--Months-->
+                    <LinearLayout
+                        android:id="@+id/months-group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:id="@+id/months-ans-text"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="80"
+                                android:text="Answer"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/montserrat_regular"/>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/reset-cardview"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="20"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardElevation="1dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_margin="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:gravity="center"
+                                    android:text="RESET"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    />
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:orientation="vertical"
+                            android:weightSum="400">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="100"
+                                android:orientation="horizontal"
+                                android:weightSum="30">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/apr-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/apr-text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorSand"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="April"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="14sp" />
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/jan-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/jan-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="January"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/oct-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/oct-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="October"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="100"
+                                android:orientation="horizontal"
+                                android:weightSum="30">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/jul-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/jul-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="July"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/nov-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/nov-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="November"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/sep-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/sep-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="September"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="100"
+                                android:orientation="horizontal"
+                                android:weightSum="30">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/jun-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/jun-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="June"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/aug-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/aug-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="August"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/dec-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/dec-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="December"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="100"
+                                android:orientation="horizontal"
+                                android:weightSum="30">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/mar-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/mar-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="March"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/feb-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/feb-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="February"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/may-cardview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="10"
+                                    android:clickable="true"
+                                    app:cardElevation="1dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_margin="2dp">
+
+                                    <TextView
+                                        android:id="@+id/may-text"
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:text="May"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/colorTextDark"
+                                        android:background="@color/colorSand"/>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/cit-next-button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+    </LinearLayout>
+
+</LinearLayout>

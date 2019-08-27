@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Cyan-->
+    <!--<color name="colorPrimaryDark">#009688</color>-->
+
+    <!--Light Cyan-->
+    <!--<color name="colorPrimary">#4DB6AC</color>-->
+    <!--Yellow-->
+    <!--<color name="colorAccent">#FFD600</color>-->
+    <!--Sand-->
+    <color name="colorSand">#EFEBE9</color>
+    <!--Dark sand-->
+    <color name="colorSandDark">#4E342E</color>
+    <color name="colorTextDark">#37474F</color>
+    <!--White-->
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+</resources>

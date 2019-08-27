@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Dementia Test</string>
+    <string name="profile">Profile</string>
+    <string name="privacyLink">
+        <a href="https://dementiatest.co.nz/privacy-policy/">Data Privacy Policy</a>
+    </string>
+
+
+    <string-array name="ethnicity_array">
+        <item>African</item>
+        <item>American</item>
+        <item>Asian</item>
+        <item>European</item>
+        <item>Middle Eastern</item>
+        <item>Pacifican</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>Select</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="educ_array">
+        <item>School</item>
+        <item>Vocational</item>
+        <item>Undergraduate</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

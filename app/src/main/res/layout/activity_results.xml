@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".ResultsActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logo-img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo"
+            android:clickable="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/logo-img"
+            android:layout_marginLeft="16dp"
+            android:text="DementiaTest"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_regular"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:weightSum="30">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="1"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="24sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorTextDark"
+                    android:layout_gravity="center"/>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Questions"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="3"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/single-linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/customborder"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/final-score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="36"
+                            android:textSize="40sp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:paddingBottom="16dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Score"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorSandDark"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingBottom="16dp"/>
+
+                    <TextView
+                        android:id="@+id/class-text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dementia Classification"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:paddingBottom="16dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/both-linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/both-class-text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dementia Description"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:paddingBottom="16dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/back_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginRight="8dp"
+                        android:text="DETAILS"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:background="@color/colorPrimary"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/done-button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:layout_marginLeft="8dp"
+                        android:text="DONE"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10">
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SubmitFragment"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="45">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="You are almost done.
+Click Submit to view your results."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+        <CheckBox
+            android:id="@+id/used-cb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:text="Have you used this app before for this test and for the same patient?"
+            android:textColor="@color/colorTextDark"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <CheckBox
+            android:id="@+id/diagnosed-cb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:text="Has the respondent been diagnosed with Dementia?"
+            android:textColor="@color/colorTextDark"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/submit-button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="By clicking Submit, I agree to take part of this research and acknowledge data submitted will be anonymous and used only for research related to Dementia"
+            android:textSize="10sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
